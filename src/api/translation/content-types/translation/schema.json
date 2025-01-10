@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "translations",
+  "info": {
+    "singularName": "translation",
+    "pluralName": "translations",
+    "displayName": "translation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uk": {
+      "type": "json"
+    },
+    "en": {
+      "type": "json"
+    }
+  }
+}
