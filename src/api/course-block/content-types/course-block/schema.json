@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_blocks",
+  "info": {
+    "singularName": "course-block",
+    "pluralName": "course-blocks",
+    "displayName": "Course Block",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_blocks"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "pdf",
+        "ppt"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}
